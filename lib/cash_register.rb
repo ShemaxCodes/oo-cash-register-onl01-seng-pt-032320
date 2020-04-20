@@ -21,8 +21,9 @@ def add_item(title, price, quantity = 1)
     else
       @items << title 
     end
+    @last_transaction = price * quantity 
   end
-   @last_transaction = price * quantity 
+  
 
   
   
